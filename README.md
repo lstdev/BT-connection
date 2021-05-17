@@ -9,6 +9,18 @@ Add to your gradle dependencies:
 implementation 'com.github.lstdev:BT-connection:1.0.0'
 ```
 
+Add it in your root build.gradle at the end of repositories:
+
+```
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+
+
 ## Enable bluetooth
 
 **Careful: You also have to enable phone location in newer versions of Android.**
